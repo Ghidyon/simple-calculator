@@ -17,16 +17,17 @@ body {
     align-items: center;
     min-height: 100vh;
     font-family: "Helvetica Neue LT Std 55 Roman";
+    background-color: black;
 }
 
-div {
+main {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    max-width: 300px;
-    border: 3px solid saddlebrown;
-    grid-column-gap: 0;
     place-items: center;
-    padding: 0 1rem;
+    grid-row-gap: .5rem;
+    max-width: 350px;
+    background-color: silver;
+    padding-bottom: 1rem;
 }
 
 input {
@@ -36,20 +37,47 @@ input {
     padding-top: 2rem;
     margin-bottom: .5rem;
 }
-/* 
+
+input:focus {
+    outline: none;
+}
+
 #clear {
     grid-column: span 2;
+    width: 168px;
+    background-color: #A9A9A9;
+    color: black;
+    box-shadow: 
+    5px 5px 5px 0 rgba(0, 0, 0, 0.2),
+    -3px -3px 3px 0 rgba(255, 255, 255, 0.2);
 }
 
-#divide {
-    grid-column: 4/5;
-} */
-
-button{
-    font-size: 1.5rem;
-    width: 60px;
-    height: 60px;
-    border-radius: 35px;
+#equals {
+    grid-row: span 2;
+    height: 168px;
 }
 
+button {
+    font-size: 2.2rem;
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    border: 0;
+    outline: none;
+    color: white;
+    background-color: #464647;
+    box-shadow: 
+    5px 5px 5px 0 rgba(0, 0, 0, 0.4),
+    -3px -3px 3px 0 rgba(255, 255, 255, 0.3);
+}
 
+button:active, #equals:active, #clear:active, .blue:active {
+  box-shadow: none;
+}
+
+.blue {
+  background-color: #1a73e8;
+  box-shadow: 
+    5px 5px 5px 0 rgba(0, 0, 0, 0.2),
+    -3px -3px 3px 0 rgba(255, 255, 255, 0.2);
+}
