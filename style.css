@@ -1,4 +1,4 @@
-*{
+*, *::before, *::after {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -8,7 +8,7 @@
     font-family: 'Helvetica Neue LT Std 55 Roman';
     font-style: normal;
     font-weight: normal;
-    src: url('fonts/HelveticaNeueLTStd55Roman.woff');
+    src: url('font/HelveticaNeueLTStd55Roman.woff');
 }
 
 body {
@@ -27,7 +27,7 @@ main {
     grid-row-gap: .5rem;
     max-width: 350px;
     background-color: silver;
-    padding: 2rem .5rem;
+    padding: 1rem .5rem 1rem .5rem;
     border-radius: 25px;
 }
 
@@ -38,9 +38,11 @@ input {
     font-size: 3rem;
     background-color: silver;
     color: black;
+    border-radius: 10px;
     border: 0;
     text-align: right;
-    padding-top: 2rem;
+    padding: 2rem .5rem 0 0;
+    margin-bottom: 1rem;
 }
 
 input:focus {
@@ -88,22 +90,38 @@ button:active, #equals:active, #clear:active, .blue:active {
     -3px -3px 3px 0 rgba(255, 255, 255, 0.2);
 }
 
-span {
+a {
+    position: relative;
     grid-column: span 4;
-    font-family: "Helvetica Neue LT Std 55 Roman";
+    margin: 1rem 0 .7rem 0;
+    text-decoration: none;
+    color: black;
+    font-size: .9rem;
+    font-family: "Lato", sans-serif;
+}
+
+a::after {
+    background-color: #1a73e8;
+    width: 25px;
+    height: 3px;
+    position: absolute;
+    content: "";
+    left: 35%;
+    bottom: -45%;
+    border-radius: 30%;
 }
 
 @media (max-width: 349px) {
-   button {
+    button {
        width: 68px;
        height: 68px;
-   }
+    }
 
-   #clear {
+    #clear {
        width: 146px;
-   }
+    }
 
-   #equals {
+    #equals {
        height: 143px;
-   }
+    }
 }
