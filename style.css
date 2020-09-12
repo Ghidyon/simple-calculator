@@ -97,7 +97,7 @@ a {
     text-decoration: none;
     color: black;
     font-size: .9rem;
-    font-family: "Lato", sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 a::after {
@@ -107,7 +107,7 @@ a::after {
     position: absolute;
     content: "";
     left: 35%;
-    bottom: -45%;
+    bottom: -20%;
     border-radius: 30%;
 }
 
