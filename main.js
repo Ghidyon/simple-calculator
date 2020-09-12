@@ -11,12 +11,21 @@ const button6 = () => input.value += 6;
 const button7 = () => input.value += 7;
 const button8 = () => input.value += 8;
 const button9 = () => input.value += 9;
-const divide = () => input.value += "/" //"\u00f7";
+const divide = () => {
+    if (input.value === '') {
+     console.log("let's fixed this");
+    } else {
+     input.value += "/" //"\u00f7";
+   }
+}
+
 const multiply = () => input.value += "*";//"\u00d7";
 const minus = () => input.value += "-";
 const add = () => input.value += "+";
-const equals = () => input.value = eval(input.value);
 const clearAll = () => input.value = "";
 
 
-
+const equals = () => {
+  input.value = eval(input.value)
+  
+};
