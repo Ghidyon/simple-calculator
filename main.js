@@ -70,7 +70,7 @@ const add = () => {
 }
 
 const equals = () => {
-  let calculate = input.value.replace(/\u00f7/gi, "/");
-  calculate = calculate.replace(/\u00d7/gi, "*");
+  let calculate = input.value.replace(/\u00f7/g, "/");
+  calculate = calculate.replace(/\u00d7/g, "*");
   input.value = eval(calculate);
 }

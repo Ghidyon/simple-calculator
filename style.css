@@ -27,7 +27,7 @@ main {
     grid-row-gap: .5rem;
     max-width: 350px;
     background-color: silver;
-    padding: 1rem .5rem .5rem .5rem;
+    padding: 1.5rem .5rem 1rem .5rem;
     border-radius: 25px;
 }
 
@@ -63,7 +63,7 @@ input:focus {
 
 #equals {
     grid-row: span 2;
-    height: 159px;
+    height: 156px;
 }
 
 button, button:disabled {
@@ -94,7 +94,7 @@ button:active, #equals:active, #clear:active, .blue:active {
 a {
     position: relative;
     grid-column: span 4;
-    margin: 1rem 0 .7rem 0;
+    margin: .7rem 0 .5rem 0;
     text-decoration: none;
     color: black;
     font-size: .9rem;
