@@ -27,7 +27,7 @@ main {
     grid-row-gap: .5rem;
     max-width: 350px;
     background-color: silver;
-    padding: 1rem .5rem 1rem .5rem;
+    padding: 1rem .5rem .5rem .5rem;
     border-radius: 25px;
 }
 
@@ -40,9 +40,11 @@ input {
     color: black;
     border-radius: 10px;
     border: 0;
-    text-align: right;
-    padding: 2rem .5rem 0 0;
+    padding: 2rem .5rem 0;
     margin-bottom: 1rem;
+    overflow: scroll;
+    box-shadow: inset 5px 5px 5px 0 rgba(0, 0, 0, 0.2), inset -3px -3px 3px 0 rgba(255, 255, 255, 0.2);
+    text-align: right;
 }
 
 input:focus {
