@@ -39,6 +39,7 @@ input {
     background-color: silver;
     color: black;
     border-radius: 10px;
+    overflow: scroll;
     border: 0;
     padding: 2rem .5rem 0;
     margin-bottom: 1rem;

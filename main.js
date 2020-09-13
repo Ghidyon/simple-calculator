@@ -2,6 +2,7 @@ const input = document.querySelector('#input');
 
 const clearAll = () => input.value = "0";
 
+//for number keys
 const getNumber = (num) => {
   if (input.value === "0") {
     input.value = num;
@@ -20,6 +21,7 @@ const button00 = () => {
   }
 }
 
+//for decimal point
 const point = () => {
   let lastInput = input.value.charAt(input.value.length - 1);
   if (lastInput === ".") {
@@ -30,6 +32,7 @@ const point = () => {
   }
 }
 
+//for division operator
 const divide = () => {
   let lastInput = input.value.charAt(input.value.length - 1);
   if (input.value === "" || lastInput === "\u00f7" || lastInput === "\u00d7" || lastInput === "+" || lastInput === "-") {
@@ -40,6 +43,7 @@ const divide = () => {
   }
 }
 
+//for multiplication operator
 const multiply = () => {
   let lastInput = input.value.charAt(input.value.length - 1);
   if (input.value === '' || lastInput === "\u00d7" || lastInput === "\u00f7" || lastInput === "+" || lastInput === "-") {
@@ -50,6 +54,7 @@ const multiply = () => {
   }
 }
 
+//for subtraction operator
 const minus = () => {
   let lastInput = input.value.charAt(input.value.length - 1);
   if (lastInput == "-" || lastInput === "+") {
@@ -60,6 +65,7 @@ const minus = () => {
   }
 }
 
+//for addition operator
 const add = () => {
   let lastInput = input.value.charAt(input.value.length - 1);
   if (input.value === '' || lastInput == "+" || lastInput === "\u00f7" || lastInput === "\u00d7" || lastInput == "-") {
@@ -70,6 +76,7 @@ const add = () => {
   }
 }
 
+//for calculations
 const equals = () => {
   let calculate = input.value.replace(/\u00f7/g, "/");
   calculate = calculate.replace(/\u00d7/g, "*");
