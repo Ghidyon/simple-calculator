@@ -109,7 +109,7 @@ a::after {
     content: "";
     left: 35%;
     bottom: -20%;
-    border-radius: 30%;
+    border-radius: 40%;
 }
 
 @media (max-width: 349px) {

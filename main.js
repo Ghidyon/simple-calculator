@@ -1,4 +1,5 @@
 const input = document.querySelector('#input');
+
 const clearAll = () => input.value = "0";
 
 const getNumber = (num) => {
@@ -74,3 +75,4 @@ const equals = () => {
   calculate = calculate.replace(/\u00d7/g, "*");
   input.value = eval(calculate);
 }
+
